@@ -1,0 +1,19 @@
+step hello
+    speak "请问" +&name+  "你要" +"进行什么？充值请按2，退出请按1"
+    listen 10
+    branch "1", ty
+    branch "2", sj
+    silence ty
+    default c1
+    #hehehhehe
+step ty
+    speak  "感谢您的使用！" +&name+  "再见"
+    exit
+step sj
+    speak  "当前余额："+&balance+"充值金额:"
+    compute &balance + input,ty
+    speak  &name+  " 你当前余额为："+&balance +" 按任意键回到主页:"
+    default hello
+step c1
+    speak  "sorry " +&name+  " i don't know what you say"
+    exit

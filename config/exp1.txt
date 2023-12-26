@@ -1,0 +1,20 @@
+step pro1
+    speak &name + "welcome, charge please type 1, exit please type exit "
+    branch "1" ,chargeproc
+    branch "exit" ,exitproc
+    default defaultproc
+
+step chargeproc
+    speak &name + "please type the amount of money you want to charge :"
+    compute &balance + input, reproce
+    speak &name + " your balance is " + &balance +" type to back:"
+    default pro1
+step reproce
+    speak &name + " your balance is " + &balance +" type to back:"
+    default pro1
+step defaultproc
+    speak &name + " is not a valid option, type to back:"
+    default pro1
+step exitproc
+    speak &name + "thank you for using our service"
+    exit

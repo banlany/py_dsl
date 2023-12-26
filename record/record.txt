@@ -1,0 +1,3 @@
+hhye
+[['hhyewelcome, charge please type 1, exit please type exit ', 'bot'], ['1', 'user'], ['hhyeplease type the amount of money you want to charge :', 'bot'], ['3', 'user'], ['hhye your balance is 396.3 type to back:', 'bot'], ['', 'user'], ['hhyewelcome, charge please type 1, exit please type exit ', 'bot'], ['exit', 'user']]
+19
